@@ -1,0 +1,146 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body{
+	background-color: hsl(30, 38%, 92%);
+	font-family: 'Montserrat', sans-serif;
+	font-size: 14px;
+}
+
+.container{
+	width: 650px;
+	height: 450px;
+	margin: auto;
+	display: flex;
+	margin-top: 70px;
+	border-radius: 10px;
+	background-color: #fff;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.first{
+	
+	border-top-left-radius:10px;
+	border-bottom-left-radius: 10px;
+	background-image: url(image-product-desktop.jpg);
+	background-size: cover;
+	background-position: center;
+	width: 50%;
+}
+
+.second{
+	
+	border-top-right-radius: 10px;
+	border-bottom-right-radius: 10px;
+	width:50%;
+	padding-left: 30px;
+	padding-right: 40px;
+	padding-top: 40px; 
+	background-color: hsl(0, 0%, 100%);
+}
+
+.second h6{
+	margin-bottom: 15px;
+	letter-spacing: 5px;
+	font-weight: 500;
+	font-size: 10px;
+	color: hsl(228, 12%, 48%);
+}
+
+.second h1{
+	margin-bottom: 30px;
+	font-family: 'Fraunces', serif;
+	margin-right: 70px;
+	color: hsl(212, 21%, 14%);
+}
+
+.second p{
+	margin-bottom: 40px;
+	line-height: 145%;
+	color: hsl(228, 12%, 48%);
+	word-spacing: 3%;
+	letter-spacing: 1%;
+}
+
+.second div h2{
+	float: left;
+	font-family: 'Fraunces', serif;
+	font-weight: 700;
+	font-size: 200%;
+	color:  hsl(158, 36%, 37%);
+}
+
+.second div p{
+	margin-left: 40px;
+	padding-left: 90px;	
+	margin-top: -10px;
+	margin-bottom: 50px;
+	color: hsl(228, 12%, 48%);
+	text-decoration-line: line-through;
+
+} 
+
+.second div a{
+	align-content: center;
+	margin-left: 2%;
+	text-decoration: none;
+	color: hsl(0, 0%, 100%);
+	background-color:  hsl(158, 36%, 37%);
+	padding: 10px 70px;
+	border-radius: 5px;
+	font-size: 12px;
+}
+
+.second div a img{
+	width: 12px;
+	margin-right: 3px;
+}
+
+.second div a:hover{
+	background-color: hsl(158, 45%, 20%);
+}
+
+
+
+
+
+
+@media only screen and (max-width: 480px) {
+
+	.container{
+		min-width:;
+		width: 90%;
+		height: 750px;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 70px;
+	}
+
+	.first{
+		width: 100%;
+		height: 300px;
+		border-bottom-left-radius: 0;
+		border-top-right-radius: 10px;
+		background-image: url(image-product-mobile.jpg);
+	}
+
+	.second{
+		width: 100%;
+		height: 200px;
+	
+		padding-right: 50px;
+	}
+
+	
+
+	.second div a{
+		padding: 10px 60px;
+		margin-left: 10%;
+
+
+	}
+
+		
+}
